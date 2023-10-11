@@ -1,0 +1,25 @@
+:root{
+    --text-color: rgb(240,240,240);
+    --accient-color: blueviolet;
+    --background-color: rgb(69,86,25);
+    font-family: "Raleway", sans-serif;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--accient-color);
+    color: var(--text-color);
+    min-height: 70px;
+    display: flex;
+    justify-content: flex-end;
+}
+.navlist{
+    display:flex;
+}
