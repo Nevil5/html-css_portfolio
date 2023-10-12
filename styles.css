@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 :root{
     --text-color: rgb(240,240,240);
-    --accient-color: blueviolet;
-    --background-color: rgb(69,86,25);
-    font-family: "Raleway", sans-serif;
+    --accent-color: rgb(0, 0, 0);
+    --background-color: rgb(6, 26, 170);
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
 }
 * {
     margin: 0;
@@ -14,12 +16,119 @@
     top: 0;
     left: 0;
     right: 0;
-    background-color: var(--accient-color);
+    background-color: var(--accent-color);
     color: var(--text-color);
     min-height: 70px;
     display: flex;
     justify-content: flex-end;
 }
-.navlist{
-    display:flex;
+.nav a{
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 2.2rem;
+    padding: 1.5rem;
+    font-weight: bold;
+}
+.nav a:hover{
+    background-color: var(--background-color);
+}
+.welcome-section {
+    background-image: url(img/1624136984_16-phonoteka_org-p-simpsoni-oboi-krasivo-16.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.welcome-section h1 {
+    font-size:60px;
+}
+.welcome-section p {
+    font-size:30px;
+    font-weight: bold;
+}
+.welcome-photo h2 {
+    display: flex;
+    justify-content: center;
+    font-size:60px;
+    text-decoration: underline;
+    margin-bottom: 60px;
+}
+.photo-list h3 {
+    font-size:30px;
+    color:  rgb(0, 0, 0);
+    background-color: rgb(247, 214, 41);
+    padding: 5px 20px;
+}
+.welcome-photo {
+    padding: 100px 20px;
+    background-color: rgb(133, 147, 255);
+}
+.photo-list{
+    display: grid;
+    gap: 20px;
+}
+@media (min-width: 731px){
+    .photo-list{
+        grid-template-columns: 1fr 1fr;
+        text-align: center;
+    }
+}
+@media (min-width: 1091px){
+    .photo-list{
+        text-align: center;
+    }
+}
+.button {
+    background-color: rgb(247, 214, 41);
+    text-decoration: none;
+    color:  rgb(0, 0, 0);
+    padding: 5px 15px;
+    text-align: center;
+    display: inline-block;
+    font-size: 50px;
+    border-radius: 2px;
+}
+.button-container{
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    font-weight: bold;
+}
+.button:hover{
+    background-color: var(--background-color);
+}
+.photo-list article{
+    border: 10px solid var(black);
+}
+.photo-list .title-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(247, 214, 41);
+    min-height: 40px;
+}
+.contact {
+    min-height: 60vh;
+    background: linear-gradient(62deg, #ffffff 0%, #ffee2e 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.contact h2{
+    font-size: 60px;
+    text-align: center;
+    padding-bottom: 60px;
+}
+.contact-socials{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.icon {
+    display: block;
 }
